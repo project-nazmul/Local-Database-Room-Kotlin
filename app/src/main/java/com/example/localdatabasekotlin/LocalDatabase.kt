@@ -4,7 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 
 @Database(entities = [StudentTable::class,StudentDetailsTable::class], version = 1)
-abstract class StudentDB : RoomDatabase() {
+abstract class LocalDatabase : RoomDatabase() {
 
-    abstract  val studentDao: StudentDao
+    abstract  val localDatabaseDao: LocalDatabaseDao
 }

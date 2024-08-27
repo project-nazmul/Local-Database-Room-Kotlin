@@ -6,7 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-interface StudentDao {
+interface LocalDatabaseDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertStudent(studentTable: StudentTable)

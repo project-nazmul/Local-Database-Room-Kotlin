@@ -5,8 +5,8 @@ import androidx.room.Room
 
 object DBHandler {
 
-    fun getDB(context: Context):StudentDB{
+    fun getDB(context: Context):LocalDatabase{
 
-        return  Room.databaseBuilder(context,StudentDB::class.java,"StudentDB").allowMainThreadQueries().build()
+        return  Room.databaseBuilder(context,LocalDatabase::class.java,"LocalDatabase").allowMainThreadQueries().build()
     }
 }
